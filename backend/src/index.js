@@ -15,7 +15,7 @@ const __dirname = path.resolve();
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // ✅ Set your frontend URL, NOT "*"
+    origin: ["http://localhost:5173","https://quickchat-7zfh.onrender.com"], // ✅ Set your frontend URL, NOT "*"
     credentials: true, // ✅ Required to allow cookies/sessions
     methods: ["GET", "POST", "PUT", "DELETE"], // Allow necessary methods
     allowedHeaders: ["Content-Type", "Authorization"], // Optional
